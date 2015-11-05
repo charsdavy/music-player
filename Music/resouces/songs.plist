@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Let It Go</string>
+		<key>filename</key>
+		<string>Let It Go.mp3</string>
+		<key>singer</key>
+		<string>黛米·洛瓦托，伊迪娜·门泽尔</string>
+		<key>singerIcon</key>
+		<string>song_100.png</string>
+		<key>icon</key>
+		<string>song_400.png</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>小苹果</string>
+		<key>filename</key>
+		<string>小苹果.mp3</string>
+		<key>singer</key>
+		<string>筷子兄弟</string>
+		<key>singerIcon</key>
+		<string>kzxd_100.png</string>
+		<key>icon</key>
+		<string>kzxd_400.png</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>愿得一人心(剧场版)</string>
+		<key>filename</key>
+		<string>愿得一人心(剧场版).mp3</string>
+		<key>singer</key>
+		<string>李行亮 雨宗林</string>
+		<key>singerIcon</key>
+		<string>song_100.png</string>
+		<key>icon</key>
+		<string>song_400.png</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>爱莫忘</string>
+		<key>filename</key>
+		<string>爱莫忘.mp3</string>
+		<key>singer</key>
+		<string>郑欣宜</string>
+		<key>singerIcon</key>
+		<string>zxy_100.png</string>
+		<key>icon</key>
+		<string>zxy_400.png</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>泡沫</string>
+		<key>filename</key>
+		<string>泡沫.mp3</string>
+		<key>singer</key>
+		<string>邓紫琪G.E.M</string>
+		<key>singerIcon</key>
+		<string>gem_100.png</string>
+		<key>icon</key>
+		<string>gem_400.png</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>爸爸去哪儿</string>
+		<key>filename</key>
+		<string>爸爸去哪儿.mp3</string>
+		<key>singer</key>
+		<string>爸爸去哪儿第一季</string>
+		<key>singerIcon</key>
+		<string>bbqne_100.png</string>
+		<key>icon</key>
+		<string>bbqne_400.png</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>昨迟人</string>
+		<key>filename</key>
+		<string>昨迟人.mp3</string>
+		<key>singer</key>
+		<string>爸爸去哪儿第一季</string>
+		<key>singerIcon</key>
+		<string>bbqne_100.png</string>
+		<key>icon</key>
+		<string>bbqne_400.png</string>
+	</dict>
+</array>
+</plist>
