@@ -63,6 +63,7 @@
     //设置表格的背景为透明
     self.tableView.backgroundColor = [UIColor clearColor];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.contentInset = UIEdgeInsetsMake(10, 0, 0, 0);
     
 //    //初始化"音乐工具类"里的播放器
 //    [[DZMusicTool sharedDZMusicTool] prepareToPlayWithMusic:self.musics[self.musicIndex]];
