@@ -70,9 +70,9 @@
 		<key>singer</key>
 		<string>爸爸去哪儿第一季</string>
 		<key>singerIcon</key>
-		<string>bbqne_100.png</string>
+		<string>song_100.png</string>
 		<key>icon</key>
-		<string>bbqne_400.png</string>
+		<string>song_400.png</string>
 	</dict>
 	<dict>
 		<key>name</key>

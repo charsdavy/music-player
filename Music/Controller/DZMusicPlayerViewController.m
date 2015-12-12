@@ -45,18 +45,9 @@
     return _musics;
 }
 
--(void)test
-{
-    NSMutableArray *array = [NSMutableArray arrayWithObjects:@"abc",@"123",@"abc",@"456", nil];
-    [array removeObject:@"abc"];
-    NSLog(@"%@",array);
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    [self test];
     
     //添加播放的工具条
     DZPlayerToolBar *toolBar = [DZPlayerToolBar playerToolBar];
@@ -65,11 +56,13 @@
     toolBar.bounds = self.bottomView.bounds;
     [self.bottomView addSubview:toolBar];
     self.playerToolBar = toolBar;
+    self.title = @"Music";
     
     //设置表格的透明度
     //self.tableView.alpha = 0.3;
     //设置表格的背景为透明
     self.tableView.backgroundColor = [UIColor clearColor];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
 //    //初始化"音乐工具类"里的播放器
 //    [[DZMusicTool sharedDZMusicTool] prepareToPlayWithMusic:self.musics[self.musicIndex]];
@@ -171,6 +164,11 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.musics.count;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 50;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

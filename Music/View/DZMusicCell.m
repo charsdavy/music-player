@@ -8,6 +8,7 @@
 
 #import "DZMusicCell.h"
 #import "DZMusic.h"
+#import "UIImage+CZ.h"
 
 @implementation DZMusicCell
 
@@ -30,6 +31,8 @@
     
     self.textLabel.text = music.name;
     self.detailTextLabel.text = music.singer;
+    UIImage *circleImage = [UIImage circleImageWithName:music.singerIcon borderWidth:1.0 borderColor:[UIColor whiteColor]];
+    self.imageView.image = circleImage;
 }
 
 @end
