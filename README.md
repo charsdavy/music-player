@@ -16,4 +16,7 @@ screenshots
 #Blog
 My blog is [here](http://www.cnblogs.com/chars). Welcome to visit!
 
+#E-mail
+Author:chars_d@126.com
+
 Copyright
