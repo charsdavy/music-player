@@ -13,10 +13,19 @@
 #import "DZMusicCell.h"
 #import "DZMusicTool.h"
 #import "AppDelegate.h"
+#import "DZLeftViewController.h"
+#import "UIView+Frame.h"
+#import "DZAboutViewController.h"
 
-@interface DZMusicPlayerViewController ()<UITableViewDataSource, UITableViewDelegate,DZPlayerToolBarDelegate,AVAudioPlayerDelegate>
+@interface DZMusicPlayerViewController ()<UITableViewDataSource, UITableViewDelegate,UIGestureRecognizerDelegate, DZPlayerToolBarDelegate, AVAudioPlayerDelegate, DZLeftViewDelegate>
+{
+    CGRect leftViewLeftFrame;//左视图在左边时位置
+    CGRect leftViewRightFrame;//左视图在右边时位置
+}
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (nonatomic, strong) DZLeftViewController *leftViewController;
 /**
  *  当前播放音乐的索引
  */
@@ -49,27 +58,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    //添加播放的工具条
-    DZPlayerToolBar *toolBar = [DZPlayerToolBar playerToolBar];
-    toolBar.delegate = self;
-    //设置toolBar的尺寸
-    toolBar.bounds = self.bottomView.bounds;
-    [self.bottomView addSubview:toolBar];
-    self.playerToolBar = toolBar;
-    self.title = @"Music";
-    
-    //设置表格的透明度
-    //self.tableView.alpha = 0.3;
-    //设置表格的背景为透明
-    self.tableView.backgroundColor = [UIColor clearColor];
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.tableView.contentInset = UIEdgeInsetsMake(10, 0, 0, 0);
-    
-//    //初始化"音乐工具类"里的播放器
-//    [[DZMusicTool sharedDZMusicTool] prepareToPlayWithMusic:self.musics[self.musicIndex]];
-//    
-//    //初始化播放的音乐(默认播放第一首)
-//    toolBar.playingMusic = self.musics[self.musicIndex];
+    [self setupUI];
+    [self setupTableView];
     [self playMusic];
     
     //设置appdelegate的block
@@ -93,6 +83,101 @@
                 break;
         }
     };
+}
+
+-(void)setupUI
+{
+    leftViewLeftFrame = CGRectMake(-kMainWidth, 0, kViewWidth, kViewHeight);
+    leftViewRightFrame = CGRectMake(self.view.x,self.view.y, self.view.width, self.view.height);
+    
+    //添加播放的工具条
+    DZPlayerToolBar *toolBar = [DZPlayerToolBar playerToolBar];
+    toolBar.delegate = self;
+    //设置toolBar的尺寸
+    toolBar.bounds = self.bottomView.bounds;
+    [self.bottomView addSubview:toolBar];
+    self.playerToolBar = toolBar;
+    
+    self.title = @"Music";
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Home_Icon_Highlight"] style:UIBarButtonItemStylePlain target:self action:@selector(showLeftView)];
+    
+    self.leftViewController = [[DZLeftViewController alloc] init];
+    self.leftViewController.delegate = self;
+    self.leftViewController.view.frame = leftViewLeftFrame;
+    [self.view addSubview:self.leftViewController.view];
+    
+    //添加左划手势操作
+    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
+    swipe.delegate = self;
+    [self.view addGestureRecognizer:swipe];
+}
+
+-(void)setupTableView
+{
+    //设置表格的透明度
+    //self.tableView.alpha = 0.3;
+    //设置表格的背景为透明
+    self.tableView.backgroundColor = [UIColor clearColor];
+    self.tableView.contentInset = UIEdgeInsetsMake(10, 0, 0, 0);
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
+    return YES;
+}
+
+#pragma mark - 视图切换
+- (void)swipe:(UISwipeGestureRecognizer *)recognizer{
+    if (recognizer.direction == UISwipeGestureRecognizerDirectionRight) {
+        [self showLeftView];
+    }
+}
+
+-(void)showLeftView
+{
+    self.tableView.userInteractionEnabled = NO;
+    [self.leftViewController.view becomeFirstResponder];
+    [UIView animateWithDuration:0.3 animations:^{
+        self.leftViewController.view.frame = leftViewRightFrame;
+        self.tableView.alpha = 0.6;
+        self.bottomView.alpha = 0.6;
+    }];
+    NSLog(@"showLeftView");
+}
+
+#pragma mark - DZLeftViewDelegate methods
+- (void)showHomeView{
+    self.tableView.userInteractionEnabled = YES;
+    [self.leftViewController.view becomeFirstResponder];
+    [UIView animateWithDuration:0.3 animations:^{
+        self.leftViewController.view.frame = leftViewLeftFrame;
+        self.tableView.alpha = 1;
+        self.bottomView.alpha = 1;
+    }];
+    NSLog(@"showHomeView");
+}
+
+- (void)showOnlineMusicView{
+    self.tableView.userInteractionEnabled = YES;
+    [self.leftViewController.view becomeFirstResponder];
+    [UIView animateWithDuration:0.3 animations:^{
+        self.leftViewController.view.frame = leftViewLeftFrame;
+        self.tableView.alpha = 1;
+        self.bottomView.alpha = 1;
+    }];
+    NSLog(@"showOnlineMusicView");
+}
+
+- (void)showAboutView{
+    DZAboutViewController *about = [[DZAboutViewController alloc] init];
+    self.tableView.userInteractionEnabled = YES;
+    [self.leftViewController.view becomeFirstResponder];
+    [UIView animateWithDuration:0.3 animations:^{
+        self.leftViewController.view.frame = leftViewLeftFrame;
+        self.tableView.alpha = 1;
+        self.bottomView.alpha = 1;
+        [self.navigationController pushViewController:about animated:YES];
+    }];
+    NSLog(@"showAboutView");
 }
 
 #pragma mark - DZPlayerToolBarDelegate methods

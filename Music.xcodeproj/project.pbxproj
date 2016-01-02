@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D54093DF1C37A00200C4D3C5 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = D54093DE1C37A00200C4D3C5 /* UIView+Frame.m */; };
+		D54093E21C37D7AF00C4D3C5 /* DZAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D54093E11C37D7AF00C4D3C5 /* DZAboutViewController.m */; };
 		D55F3E1B1BB7015F00007499 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D55F3E1A1BB7015F00007499 /* main.m */; };
 		D55F3E1E1BB7015F00007499 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D55F3E1D1BB7015F00007499 /* AppDelegate.m */; };
 		D55F3E241BB7015F00007499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D55F3E221BB7015F00007499 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		D55F3E291BB7015F00007499 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D55F3E271BB7015F00007499 /* LaunchScreen.xib */; };
 		D55F3E351BB7016000007499 /* MusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D55F3E341BB7016000007499 /* MusicTests.m */; };
 		D55F3E4B1BB704C500007499 /* DZMusicPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D55F3E4A1BB704C500007499 /* DZMusicPlayerViewController.m */; };
+		D56ABD821C3787470059E136 /* DZLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D56ABD811C3787470059E136 /* DZLeftViewController.m */; };
 		D5CB20491BB7A3A20065D767 /* DZPlayerToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D5CB20481BB7A3A20065D767 /* DZPlayerToolBar.m */; };
 		D5CB204B1BB7A42C0065D767 /* DZPlayerToolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5CB204A1BB7A42C0065D767 /* DZPlayerToolBar.xib */; };
 		D5CB20621BB7AFBE0065D767 /* Let It Go.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D5CB204E1BB7AFBE0065D767 /* Let It Go.mp3 */; };
@@ -65,6 +68,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D54093DB1C3795C200C4D3C5 /* Music-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Music-Prefix.pch"; sourceTree = "<group>"; };
+		D54093DD1C37A00200C4D3C5 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		D54093DE1C37A00200C4D3C5 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		D54093E01C37D7AF00C4D3C5 /* DZAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZAboutViewController.h; sourceTree = "<group>"; };
+		D54093E11C37D7AF00C4D3C5 /* DZAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZAboutViewController.m; sourceTree = "<group>"; };
 		D55F3E151BB7015F00007499 /* Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Music.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55F3E191BB7015F00007499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D55F3E1A1BB7015F00007499 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,6 +86,9 @@
 		D55F3E341BB7016000007499 /* MusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicTests.m; sourceTree = "<group>"; };
 		D55F3E491BB704C500007499 /* DZMusicPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMusicPlayerViewController.h; sourceTree = "<group>"; };
 		D55F3E4A1BB704C500007499 /* DZMusicPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZMusicPlayerViewController.m; sourceTree = "<group>"; };
+		D56ABD801C3787470059E136 /* DZLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZLeftViewController.h; sourceTree = "<group>"; };
+		D56ABD811C3787470059E136 /* DZLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZLeftViewController.m; sourceTree = "<group>"; };
+		D56ABD831C3790AA0059E136 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		D5CB20471BB7A3A20065D767 /* DZPlayerToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPlayerToolBar.h; sourceTree = "<group>"; };
 		D5CB20481BB7A3A20065D767 /* DZPlayerToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZPlayerToolBar.m; sourceTree = "<group>"; };
 		D5CB204A1BB7A42C0065D767 /* DZPlayerToolBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZPlayerToolBar.xib; sourceTree = "<group>"; };
@@ -185,6 +196,7 @@
 				D55F3E401BB7019700007499 /* View */,
 				D55F3E1C1BB7015F00007499 /* AppDelegate.h */,
 				D55F3E1D1BB7015F00007499 /* AppDelegate.m */,
+				D56ABD831C3790AA0059E136 /* Common.h */,
 				D55F3E221BB7015F00007499 /* Main.storyboard */,
 				D55F3E251BB7015F00007499 /* Images.xcassets */,
 				D55F3E271BB7015F00007499 /* LaunchScreen.xib */,
@@ -199,6 +211,7 @@
 				D5CB204C1BB7AFBE0065D767 /* resouces */,
 				D55F3E191BB7015F00007499 /* Info.plist */,
 				D55F3E1A1BB7015F00007499 /* main.m */,
+				D54093DB1C3795C200C4D3C5 /* Music-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -225,6 +238,10 @@
 			children = (
 				D55F3E491BB704C500007499 /* DZMusicPlayerViewController.h */,
 				D55F3E4A1BB704C500007499 /* DZMusicPlayerViewController.m */,
+				D56ABD801C3787470059E136 /* DZLeftViewController.h */,
+				D56ABD811C3787470059E136 /* DZLeftViewController.m */,
+				D54093E01C37D7AF00C4D3C5 /* DZAboutViewController.h */,
+				D54093E11C37D7AF00C4D3C5 /* DZAboutViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -331,6 +348,8 @@
 				D5CB20A31BB7BFBF0065D767 /* NSString+CZ.m */,
 				D5CB20A41BB7BFBF0065D767 /* UIImage+CZ.h */,
 				D5CB20A51BB7BFC00065D767 /* UIImage+CZ.m */,
+				D54093DD1C37A00200C4D3C5 /* UIView+Frame.h */,
+				D54093DE1C37A00200C4D3C5 /* UIView+Frame.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -466,6 +485,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5CB209A1BB7B0C40065D767 /* NSObject+MJMember.m in Sources */,
+				D54093DF1C37A00200C4D3C5 /* UIView+Frame.m in Sources */,
 				D5CB20981BB7B0C40065D767 /* NSObject+MJCoding.m in Sources */,
 				D5CB20A61BB7BFC00065D767 /* NSString+CZ.m in Sources */,
 				D5CB20931BB7B0C40065D767 /* MJIvar.m in Sources */,
@@ -474,6 +494,7 @@
 				D5CB20901BB7B0C40065D767 /* MJArgument.m in Sources */,
 				D5CB20911BB7B0C40065D767 /* MJConst.m in Sources */,
 				D5CB20A71BB7BFC00065D767 /* UIImage+CZ.m in Sources */,
+				D54093E21C37D7AF00C4D3C5 /* DZAboutViewController.m in Sources */,
 				D5CB20961BB7B0C40065D767 /* MJType.m in Sources */,
 				D5CB20771BB7B0220065D767 /* DZMusic.m in Sources */,
 				D55F3E1E1BB7015F00007499 /* AppDelegate.m in Sources */,
@@ -484,6 +505,7 @@
 				D55F3E1B1BB7015F00007499 /* main.m in Sources */,
 				D5CB209D1BB7BABB0065D767 /* DZMusicCell.m in Sources */,
 				D5CB20941BB7B0C40065D767 /* MJMember.m in Sources */,
+				D56ABD821C3787470059E136 /* DZLeftViewController.m in Sources */,
 				D5CB20991BB7B0C40065D767 /* NSObject+MJKeyValue.m in Sources */,
 				D5CB20921BB7B0C40065D767 /* MJFoundation.m in Sources */,
 			);
@@ -611,8 +633,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: GuoDong Wang (595AE7GP87)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Music/Music-Prefix.pch";
 				INFOPLIST_FILE = Music/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -624,7 +647,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Music/Music-Prefix.pch";
 				INFOPLIST_FILE = Music/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -640,6 +664,9 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Music/Music-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -659,6 +686,9 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Music/Music-Prefix.pch";
 				INFOPLIST_FILE = MusicTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
