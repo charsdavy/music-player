@@ -32,6 +32,7 @@
     self.tableView.dataSource = self;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"leftBackground"]];
+    self.tableView.scrollEnabled =NO; //设置tableview 不能滚动
     [self.view addSubview:self.tableView];
 }
 

@@ -31,6 +31,7 @@
     textView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"aboutBackground"]];
     [self.view addSubview:textView];
     self.textView = textView;
+    self.textView.userInteractionEnabled = NO;
 }
 
 -(void)fillContent

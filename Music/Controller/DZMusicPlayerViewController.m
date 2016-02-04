@@ -16,6 +16,7 @@
 #import "DZLeftViewController.h"
 #import "UIView+Frame.h"
 #import "DZAboutViewController.h"
+#import "DZOnlineMusicViewController.h"
 
 @interface DZMusicPlayerViewController ()<UITableViewDataSource, UITableViewDelegate,UIGestureRecognizerDelegate, DZPlayerToolBarDelegate, AVAudioPlayerDelegate, DZLeftViewDelegate>
 {
@@ -119,6 +120,8 @@
     //设置表格的背景为透明
     self.tableView.backgroundColor = [UIColor clearColor];
     self.tableView.contentInset = UIEdgeInsetsMake(10, 0, 0, 0);
+    //关闭弹簧效果
+    [self.tableView setBounces:NO];
 }
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
@@ -158,11 +161,13 @@
 
 - (void)showOnlineMusicView{
     self.tableView.userInteractionEnabled = YES;
+    DZOnlineMusicViewController *onlineMusic = [[DZOnlineMusicViewController alloc] init];
     [self.leftViewController.view becomeFirstResponder];
     [UIView animateWithDuration:0.3 animations:^{
         self.leftViewController.view.frame = leftViewLeftFrame;
         self.tableView.alpha = 1;
         self.bottomView.alpha = 1;
+        [self.navigationController pushViewController:onlineMusic animated:YES];
     }];
     NSLog(@"showOnlineMusicView");
 }

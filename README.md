@@ -14,6 +14,8 @@ screenshots
 &nbsp;&nbsp;
 <img alt="one" src="https://raw.github.com/charsdavy/music-player/master/screenshots/m5.png" width="180">
 &nbsp;&nbsp;
+<img alt="one" src="https://raw.github.com/charsdavy/music-player/master/screenshots/m6.png" width="180">
+&nbsp;&nbsp;
 
 #Blog
 My blog is [here](http://my.oschina.net/chars/blog). Welcome to visit!
