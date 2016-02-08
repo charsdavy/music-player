@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class DZSinger;
+
 @interface DZDetailMusicViewController : UIViewController
+{
+    UITableView * _tableView;
+}
+
+@property (nonatomic,strong) DZSinger *singerModel;
 
 @end

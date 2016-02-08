@@ -151,10 +151,12 @@
         
         // set the background view
         StyledTableViewCellBackgroundView *backgroundView = [[StyledTableViewCellBackgroundView alloc] initWithFrame:CGRectZero];
+        backgroundView.backgroundColor = [UIColor clearColor];
         [self setBackgroundView:backgroundView];
         
         // set the selected background view
         StyledTableViewCellSelectedBackgroundView *selectedBackgroundView = [[StyledTableViewCellSelectedBackgroundView alloc] initWithFrame:CGRectZero];
+        selectedBackgroundView.backgroundColor = [UIColor clearColor];
         [self setSelectedBackgroundView:selectedBackgroundView];
         
         // clear the background color of text label because text label background overlaps with separator

@@ -25,6 +25,16 @@
 		D55F3E351BB7016000007499 /* MusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D55F3E341BB7016000007499 /* MusicTests.m */; };
 		D55F3E4B1BB704C500007499 /* DZMusicPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D55F3E4A1BB704C500007499 /* DZMusicPlayerViewController.m */; };
 		D56ABD821C3787470059E136 /* DZLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D56ABD811C3787470059E136 /* DZLeftViewController.m */; };
+		D5B3B7B31C6389C7005FDB83 /* NSDate+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B3B7B21C6389C7005FDB83 /* NSDate+Additions.m */; };
+		D5B3B7B61C638CDE005FDB83 /* DZLoadMoreFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B3B7B51C638CDE005FDB83 /* DZLoadMoreFooterView.m */; };
+		D5B3B7B91C638DD9005FDB83 /* DZSongListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B3B7B81C638DD9005FDB83 /* DZSongListTableViewCell.m */; };
+		D5B3B7BC1C638E96005FDB83 /* DZSongList.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B3B7BB1C638E96005FDB83 /* DZSongList.m */; };
+		D5B3B7BF1C63914F005FDB83 /* DZSong.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B3B7BE1C63914F005FDB83 /* DZSong.m */; };
+		D5B3B7C31C639DCE005FDB83 /* DZNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B3B7C21C639DCE005FDB83 /* DZNetworkEngine.m */; };
+		D5B3B7C61C639E18005FDB83 /* NSError+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B3B7C51C639E18005FDB83 /* NSError+Additions.m */; };
+		D5B3B7C91C639F13005FDB83 /* DZNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B3B7C81C639F13005FDB83 /* DZNetworkOperation.m */; };
+		D5B3B7CC1C639F84005FDB83 /* DZDataEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B3B7CB1C639F84005FDB83 /* DZDataEngine.m */; };
+		D5B3B7CF1C63A0C7005FDB83 /* DZMySongList.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B3B7CE1C63A0C7005FDB83 /* DZMySongList.m */; };
 		D5C67FA81C3812E30041267C /* MJArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C67F921C3812E30041267C /* MJArgument.m */; };
 		D5C67FA91C3812E30041267C /* MJConst.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C67F941C3812E30041267C /* MJConst.m */; };
 		D5C67FAA1C3812E30041267C /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C67F971C3812E30041267C /* MJFoundation.m */; };
@@ -166,6 +176,26 @@
 		D55F3E4A1BB704C500007499 /* DZMusicPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZMusicPlayerViewController.m; sourceTree = "<group>"; };
 		D56ABD801C3787470059E136 /* DZLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZLeftViewController.h; sourceTree = "<group>"; };
 		D56ABD811C3787470059E136 /* DZLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZLeftViewController.m; sourceTree = "<group>"; };
+		D5B3B7B11C6389C7005FDB83 /* NSDate+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Additions.h"; sourceTree = "<group>"; };
+		D5B3B7B21C6389C7005FDB83 /* NSDate+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Additions.m"; sourceTree = "<group>"; };
+		D5B3B7B41C638CDE005FDB83 /* DZLoadMoreFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZLoadMoreFooterView.h; sourceTree = "<group>"; };
+		D5B3B7B51C638CDE005FDB83 /* DZLoadMoreFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZLoadMoreFooterView.m; sourceTree = "<group>"; };
+		D5B3B7B71C638DD9005FDB83 /* DZSongListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZSongListTableViewCell.h; sourceTree = "<group>"; };
+		D5B3B7B81C638DD9005FDB83 /* DZSongListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSongListTableViewCell.m; sourceTree = "<group>"; };
+		D5B3B7BA1C638E96005FDB83 /* DZSongList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZSongList.h; sourceTree = "<group>"; };
+		D5B3B7BB1C638E96005FDB83 /* DZSongList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSongList.m; sourceTree = "<group>"; };
+		D5B3B7BD1C63914F005FDB83 /* DZSong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZSong.h; sourceTree = "<group>"; };
+		D5B3B7BE1C63914F005FDB83 /* DZSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSong.m; sourceTree = "<group>"; };
+		D5B3B7C11C639DCE005FDB83 /* DZNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZNetworkEngine.h; sourceTree = "<group>"; };
+		D5B3B7C21C639DCE005FDB83 /* DZNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZNetworkEngine.m; sourceTree = "<group>"; };
+		D5B3B7C41C639E18005FDB83 /* NSError+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Additions.h"; sourceTree = "<group>"; };
+		D5B3B7C51C639E18005FDB83 /* NSError+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+Additions.m"; sourceTree = "<group>"; };
+		D5B3B7C71C639F13005FDB83 /* DZNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZNetworkOperation.h; sourceTree = "<group>"; };
+		D5B3B7C81C639F13005FDB83 /* DZNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZNetworkOperation.m; sourceTree = "<group>"; };
+		D5B3B7CA1C639F84005FDB83 /* DZDataEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZDataEngine.h; sourceTree = "<group>"; };
+		D5B3B7CB1C639F84005FDB83 /* DZDataEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZDataEngine.m; sourceTree = "<group>"; };
+		D5B3B7CD1C63A0C7005FDB83 /* DZMySongList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMySongList.h; sourceTree = "<group>"; };
+		D5B3B7CE1C63A0C7005FDB83 /* DZMySongList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZMySongList.m; sourceTree = "<group>"; };
 		D5C67F911C3812E30041267C /* MJArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJArgument.h; sourceTree = "<group>"; };
 		D5C67F921C3812E30041267C /* MJArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJArgument.m; sourceTree = "<group>"; };
 		D5C67F931C3812E30041267C /* MJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJConst.h; sourceTree = "<group>"; };
@@ -456,10 +486,17 @@
 		D55F3E3F1BB7019700007499 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D5B3B7C01C639D9E005FDB83 /* Network */,
 				D5CB20751BB7B0220065D767 /* DZMusic.h */,
 				D5CB20761BB7B0220065D767 /* DZMusic.m */,
 				D5C680C31C3902020041267C /* DZSinger.h */,
 				D5C680C41C3902020041267C /* DZSinger.m */,
+				D5B3B7BA1C638E96005FDB83 /* DZSongList.h */,
+				D5B3B7BB1C638E96005FDB83 /* DZSongList.m */,
+				D5B3B7BD1C63914F005FDB83 /* DZSong.h */,
+				D5B3B7BE1C63914F005FDB83 /* DZSong.m */,
+				D5B3B7CD1C63A0C7005FDB83 /* DZMySongList.h */,
+				D5B3B7CE1C63A0C7005FDB83 /* DZMySongList.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -478,8 +515,25 @@
 				D53D75F21C633208001946D2 /* DZSingerTableViewCell.m */,
 				D53D75F41C633295001946D2 /* DZImageView.h */,
 				D53D75F51C633295001946D2 /* DZImageView.m */,
+				D5B3B7B41C638CDE005FDB83 /* DZLoadMoreFooterView.h */,
+				D5B3B7B51C638CDE005FDB83 /* DZLoadMoreFooterView.m */,
+				D5B3B7B71C638DD9005FDB83 /* DZSongListTableViewCell.h */,
+				D5B3B7B81C638DD9005FDB83 /* DZSongListTableViewCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D5B3B7C01C639D9E005FDB83 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D5B3B7C11C639DCE005FDB83 /* DZNetworkEngine.h */,
+				D5B3B7C21C639DCE005FDB83 /* DZNetworkEngine.m */,
+				D5B3B7C71C639F13005FDB83 /* DZNetworkOperation.h */,
+				D5B3B7C81C639F13005FDB83 /* DZNetworkOperation.m */,
+				D5B3B7CA1C639F84005FDB83 /* DZDataEngine.h */,
+				D5B3B7CB1C639F84005FDB83 /* DZDataEngine.m */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		D5C67F8F1C3812E30041267C /* Lib */ = {
@@ -786,6 +840,10 @@
 				D54093DE1C37A00200C4D3C5 /* UIView+Frame.m */,
 				D53D75EB1C632E6F001946D2 /* UIView+Additions.h */,
 				D53D75EC1C632E6F001946D2 /* UIView+Additions.m */,
+				D5B3B7B11C6389C7005FDB83 /* NSDate+Additions.h */,
+				D5B3B7B21C6389C7005FDB83 /* NSDate+Additions.m */,
+				D5B3B7C41C639E18005FDB83 /* NSError+Additions.h */,
+				D5B3B7C51C639E18005FDB83 /* NSError+Additions.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -930,6 +988,7 @@
 				D5C680971C38F2F00041267C /* SDImageCache.m in Sources */,
 				D5C6809A1C38F2F00041267C /* SDWebImageDownloader.m in Sources */,
 				D5C680A51C38F2F00041267C /* UIImageView+LK.m in Sources */,
+				D5B3B7B91C638DD9005FDB83 /* DZSongListTableViewCell.m in Sources */,
 				D5C67FAC1C3812E30041267C /* MJMember.m in Sources */,
 				D5C680A01C38F2F00041267C /* UIImage+MultiFormat.m in Sources */,
 				D5C67FAE1C3812E30041267C /* MJType.m in Sources */,
@@ -947,11 +1006,14 @@
 				D53D75F61C633295001946D2 /* DZImageView.m in Sources */,
 				D5C67FF91C3816CF0041267C /* NSData+MKBase64.m in Sources */,
 				D5C680951C38F2F00041267C /* NSData+GIF.m in Sources */,
+				D5B3B7C91C639F13005FDB83 /* DZNetworkOperation.m in Sources */,
 				D5C6809B1C38F2F00041267C /* SDWebImageDownloaderOperation.m in Sources */,
+				D5B3B7BF1C63914F005FDB83 /* DZSong.m in Sources */,
 				D5C67FAF1C3812E30041267C /* MJTypeEncoding.m in Sources */,
 				D5C680961C38F2F00041267C /* NSData+ImageContentType.m in Sources */,
 				D5C6809D1C38F2F00041267C /* SDWebImagePrefetcher.m in Sources */,
 				D5C67FCA1C3816B40041267C /* LKDBHelper.m in Sources */,
+				D5B3B7C31C639DCE005FDB83 /* DZNetworkEngine.m in Sources */,
 				D5C67FFE1C3816CF0041267C /* MKNetworkEngine.m in Sources */,
 				D5278F641C63231D00C12998 /* audio_stream.mm in Sources */,
 				D5C67FDD1C3816C00041267C /* FMDatabase.m in Sources */,
@@ -967,10 +1029,14 @@
 				D5C67FB01C3812E30041267C /* NSObject+MJCoding.m in Sources */,
 				D5CB20771BB7B0220065D767 /* DZMusic.m in Sources */,
 				D5C680981C38F2F00041267C /* SDWebImageCompat.m in Sources */,
+				D5B3B7BC1C638E96005FDB83 /* DZSongList.m in Sources */,
 				D5C67FE11C3816C00041267C /* FMResultSet.m in Sources */,
 				D5C680081C38EB6E0041267C /* ProgressHUD.m in Sources */,
+				D5B3B7B31C6389C7005FDB83 /* NSDate+Additions.m in Sources */,
 				D5C67FE01C3816C00041267C /* FMDatabaseQueue.m in Sources */,
+				D5B3B7CC1C639F84005FDB83 /* DZDataEngine.m in Sources */,
 				D5C67FAB1C3812E30041267C /* MJIvar.m in Sources */,
+				D5B3B7CF1C63A0C7005FDB83 /* DZMySongList.m in Sources */,
 				D5C680A11C38F2F00041267C /* UIImageView+WebCache.m in Sources */,
 				D5C67FFA1C3816CF0041267C /* NSDate+RFC1123.m in Sources */,
 				D5C67FC91C3816B40041267C /* LKDB+Mapping.m in Sources */,
@@ -988,6 +1054,7 @@
 				D5CB20AB1BB7D0690065D767 /* DZMusicTool.m in Sources */,
 				D5C680C21C38F4DD0041267C /* DZDetailMusicViewController.m in Sources */,
 				D5C6804D1C38ED4F0041267C /* DataSource.m in Sources */,
+				D5B3B7B61C638CDE005FDB83 /* DZLoadMoreFooterView.m in Sources */,
 				D5C67FCC1C3816B40041267C /* NSObject+LKDBHelper.m in Sources */,
 				D5C67FB21C3812E30041267C /* NSObject+MJMember.m in Sources */,
 				D5C67FFF1C3816CF0041267C /* MKNetworkOperation.m in Sources */,
@@ -999,6 +1066,7 @@
 				D5C6804E1C38ED4F0041267C /* DataSourceWrapper.m in Sources */,
 				D5C6809C1C38F2F00041267C /* SDWebImageManager.m in Sources */,
 				D55F3E1B1BB7015F00007499 /* main.m in Sources */,
+				D5B3B7C61C639E18005FDB83 /* NSError+Additions.m in Sources */,
 				D5C67FFD1C3816CF0041267C /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
 				D5C67FDF1C3816C00041267C /* FMDatabasePool.m in Sources */,
 				D5CB209D1BB7BABB0065D767 /* DZMusicCell.m in Sources */,

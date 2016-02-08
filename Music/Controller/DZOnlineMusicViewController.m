@@ -9,6 +9,7 @@
 #import "DZOnlineMusicViewController.h"
 #import "DZSinger.h"
 #import "DZSingerTableViewCell.h"
+#import "DZDetailMusicViewController.h"
 
 @interface DZOnlineMusicViewController ()<UITableViewDelegate, UITableViewDataSource,UISearchBarDelegate>
 {
@@ -119,6 +120,7 @@
     return searchBar;
 }
 
+#pragma mark - UITableViewDataSource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
@@ -129,6 +131,21 @@
     return [_singer count];
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *idfentifier = @"onlineViewCell";
+    DZSingerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:idfentifier];
+    if (cell == nil) {
+        cell = [[DZSingerTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:idfentifier];
+    }
+
+    DZSinger *model = [_singer objectAtIndex:indexPath.row];
+    cell.model = model;
+    cell.backgroundColor = [UIColor clearColor];
+    
+    return cell;
+}
+
+#pragma mark - UITableViewDelegate
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     if (section != 0) {
@@ -142,22 +159,14 @@
     return 70;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *idfentifier = @"onlineViewCell";
-    DZSingerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:idfentifier];
-    if (cell == nil) {
-        cell = [[DZSingerTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:idfentifier];
-    }
-
-    DZSinger *model = [_singer objectAtIndex:indexPath.row];
-    cell.model = model;
-    
-    return cell;
-}
-
--(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    DZSinger *model = [_singer objectAtIndex:indexPath.row];
+    DZDetailMusicViewController * pushController = [[DZDetailMusicViewController alloc] init];
+    pushController.singerModel = model;
+    [self.navigationController pushViewController:pushController animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
