@@ -30,6 +30,6 @@
 
 @property (nonatomic, strong) UITableView *tableView;
 
-@property (nonatomic, assign)id <DZLeftViewDelegate>   delegate;
+@property (nonatomic, assign)id <DZLeftViewDelegate>  delegate;
 
 @end

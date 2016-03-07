@@ -40,14 +40,12 @@
 }
 
 #pragma mark 接收远程事件
--(void)remoteControlReceivedWithEvent:(UIEvent *)event
-{
+-(void)remoteControlReceivedWithEvent:(UIEvent *)event{
     //判断是否为远程事件
     if (event.type == UIEventTypeRemoteControl) {
         NSLog(@"receive remote event");
         //调用block
         self.myRemoteEventBlock(event);
-        
     }
 }
 

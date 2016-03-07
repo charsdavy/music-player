@@ -1,7 +1,8 @@
-
+//  DZMusic.h
+//  Music
 //
-//  Created by Vincent_Guo on 15-2-21.
-//  Copyright (c) 2015年 Fung. All rights reserved.
+//  Created by dengwei on 15/9/27.
+//  Copyright (c) 2015年 dengwei. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

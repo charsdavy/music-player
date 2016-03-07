@@ -47,8 +47,7 @@
 @implementation DZMusicPlayerViewController
 
 #pragma mark - 懒加载
--(NSArray *)musics
-{
+-(NSArray *)musics{
     if (_musics == nil) {
         _musics = [DZMusic objectArrayWithFilename:@"songs.plist"];
     }
@@ -86,8 +85,7 @@
     };
 }
 
--(void)setupUI
-{
+-(void)setupUI{
     leftViewLeftFrame = CGRectMake(-kMainWidth, 0, kViewWidth, kViewHeight);
     leftViewRightFrame = CGRectMake(self.view.x,self.view.y, self.view.width, self.view.height);
     
@@ -113,8 +111,7 @@
     [self.view addGestureRecognizer:swipe];
 }
 
--(void)setupTableView
-{
+-(void)setupTableView{
     //设置表格的透明度
     //self.tableView.alpha = 0.3;
     //设置表格的背景为透明
@@ -135,8 +132,7 @@
     }
 }
 
--(void)showLeftView
-{
+-(void)showLeftView{
     self.tableView.userInteractionEnabled = NO;
     [self.leftViewController.view becomeFirstResponder];
     [UIView animateWithDuration:0.3 animations:^{
@@ -186,8 +182,7 @@
 }
 
 #pragma mark - DZPlayerToolBarDelegate methods
--(void)playerToolBar:(DZPlayerToolBar *)toolBar btnClickWithType:(BtnType)btnType
-{
+-(void)playerToolBar:(DZPlayerToolBar *)toolBar btnClickWithType:(BtnType)btnType{
     //实现播放,把播放功能操作放在一个工具类中
     switch (btnType) {
         case BtnTypePlay:
@@ -206,15 +201,13 @@
             [self next];
             NSLog(@"next");
             break;
-            
         default:
             break;
     }
 }
 
-//播放上一首
--(void)previous
-{
+#pragma mark 播放上一首
+-(void)previous{
     //1.更改播放音乐的索引
     if (self.musicIndex == 0) {
         self.musicIndex = self.musics.count - 1;
@@ -224,9 +217,8 @@
     [self playMusic];
 }
 
-//播放下一首
--(void)next
-{
+#pragma mark 播放下一首
+-(void)next{
     //1.更改播放音乐的索引
     if (self.musicIndex == self.musics.count - 1) {
         self.musicIndex = 0;
@@ -236,8 +228,8 @@
     [self playMusic];
 }
 
--(void)playMusic
-{
+#pragma mark 播放
+-(void)playMusic{
     //2.重新初始化一个"播放器"
     [[DZMusicTool sharedDZMusicTool] prepareToPlayWithMusic:self.musics[self.musicIndex]];
     //设置player的代理
@@ -252,18 +244,15 @@
 }
 
 #pragma mark - UITableViewDataSource methods
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.musics.count;
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 50;
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     //自定义的cell
     DZMusicCell *cell = [DZMusicCell musicCellWithTableView:tableView];
     
@@ -275,17 +264,18 @@
 }
 
 #pragma mark - UITableViewDelegate methods
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     //更改索引
     self.musicIndex = indexPath.row;
+//    if (self.playerToolBar.isPlaying == NO) {
+//        self.playerToolBar.playing = YES;
+//    }
     //播放音乐
     [self playMusic];
 }
 
 #pragma mark - AVAudioPlayerDelegate methods
--(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
-{
+-(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
     //自动播放下一首
     [self next];
 }

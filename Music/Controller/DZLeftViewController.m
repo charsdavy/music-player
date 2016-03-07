@@ -25,25 +25,22 @@
     [self setupTableView];
 }
 
--(void)setupTableView
-{
+-(void)setupTableView{
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kHeight, kViewWidth, kViewHeight) style:(UITableViewStyleGrouped)];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"leftBackground"]];
-    self.tableView.scrollEnabled =NO; //设置tableview 不能滚动
+    self.tableView.scrollEnabled = NO; //设置tableview 不能滚动
     [self.view addSubview:self.tableView];
 }
 
 #pragma mark - UITableViewDelegate methods
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _options.count;
 }
 
@@ -63,7 +60,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NSLog(@"left view did select %zi", indexPath.row);
     if (indexPath.row == 0) { //点击"首页”
         if ([_delegate respondsToSelector:@selector(showHomeView)]) {
             [_delegate showHomeView];

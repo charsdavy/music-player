@@ -10,18 +10,11 @@
 #import "DZMusic.h"
 #import <MediaPlayer/MediaPlayer.h>
 
-@interface DZMusicTool ()
-
-
-
-@end
-
 @implementation DZMusicTool
 
 singleton_implementation(DZMusicTool)
 
--(void)prepareToPlayWithMusic:(DZMusic *)music
-{
+-(void)prepareToPlayWithMusic:(DZMusic *)music{
     //创建播放器
     NSURL *musicURL = [[NSBundle mainBundle] URLForResource:music.filename withExtension:nil];
     NSError *error = nil;
@@ -51,13 +44,11 @@ singleton_implementation(DZMusicTool)
     [MPNowPlayingInfoCenter defaultCenter].nowPlayingInfo = info;
 }
 
--(void)play
-{
+-(void)play{
     [self.player play];
 }
 
--(void)pause
-{
+-(void)pause{
     [self.player pause];
 }
 
